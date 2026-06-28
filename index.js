@@ -17,7 +17,7 @@ function hexify(str) {
     } else if(col.startsWith('rgba')) {
         return col.slice(5, -1).split(',').map(e => {
             var num = parseFloat(e);
-            if(num > 0 && num < 1) {
+            if(num > 0 && num <= 1) {
                 num *= 255;
             }
             return num.toString(16).padStart(2, 0);
