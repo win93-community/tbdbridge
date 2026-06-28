@@ -42,7 +42,7 @@ socket.on('user joined', function(data) {
             ],
             avatar_url: 'https://singlecolorimage.com/get/' + hexify('mediumseagreen') + '/500x500'
         })
-    })
+    }).catch(() => {});
 });
 
 socket.on('user left', function(data) {
@@ -58,7 +58,7 @@ socket.on('user left', function(data) {
             ],
             avatar_url: 'https://singlecolorimage.com/get/' + hexify('tomato') + '/500x500'
         })
-    })
+    }).catch(() => {});
 });
 
 socket.on('user change nick', function(data) {
@@ -74,7 +74,7 @@ socket.on('user change nick', function(data) {
             ],
             avatar_url: 'https://singlecolorimage.com/get/' + hexify('gold') + '/500x500'
         })
-    })
+    }).catch(() => {});
 });
 
 socket.on('user change room', function(data) {
@@ -91,7 +91,7 @@ socket.on('user change room', function(data) {
             ],
             avatar_url: 'https://singlecolorimage.com/get/' + hexify('gold') + '/500x500'
         })
-    })
+    }).catch(() => {});
 });
 
 socket.on('message', function(data) {
